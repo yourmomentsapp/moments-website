@@ -1,0 +1,17 @@
+#policy {
+  font-family: 'Jost', sans-serif;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+#policy h1 {
+  color: black !important;
+}
+
+#policy main {
+  max-width: 600px;
+  margin: 0 auto;
+}

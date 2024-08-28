@@ -1,0 +1,41 @@
+#top-nav {
+  background-color: #000000;
+  padding: 1em;
+  width: calc(100vw - 2em);
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+#top-nav a.special {
+  color: var(--text-accent)
+}
+
+#top-nav h1 {
+  margin: 0;
+  font-size: 1em;
+  color: var(--text-accent);
+}
+
+#top-nav > div {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#top-nav a {
+  color: var(--text-primary);
+  text-decoration: none;
+  font-size: 0.8em;
+  transition: 0.5s all;
+}
+
+#top-nav a:hover {
+  color: var(--text-highlight);
+}

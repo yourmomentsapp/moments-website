@@ -1,0 +1,108 @@
+body {
+  background-color: #121111;
+  image-rendering: crisp-edges;
+}
+
+#welcome {
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: right top;
+  overflow-x: hidden;
+}
+
+#welcome h1 {
+  font-weight: 500;
+  font-size: 50pt;
+}
+
+#welcome h2 {
+  font-size: 20pt;
+  font-weight: 400;
+  color: #CDCDCD;
+}
+
+#welcome p {
+  color: #949494;
+}
+
+#welcome button a {
+  color: white;
+  text-decoration: none;
+}
+
+#welcome button {
+  transition: all 0.5s ease-out;
+}
+
+#welcome button:hover {
+  transform: scale(1.1);
+}
+
+#welcome h1,
+#welcome h2 {
+  margin: 0;
+}
+
+#grad {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  filter: brightness(80%);
+  overflow-x: hidden;
+}
+
+#grad img {
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  animation: 45s scroll infinite;
+}
+
+#logo-banner {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to right, #121111 10%, transparent);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#intro-text {
+  max-width: 500px;
+  padding: 30px;
+}
+
+#map-preview {
+  width: 250px;
+  margin-left: 70px;
+  transform: rotate(12deg);
+}
+
+.side-by-side {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 779px) {
+  #map-preview {
+    display: none;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: -100%;
+  }
+  100% {
+    left: 0
+  }
+}

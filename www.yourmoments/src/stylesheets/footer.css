@@ -1,0 +1,28 @@
+footer {
+  background-color: var(--bg-dark);
+  height: 200px;
+  color: var(--bg-lighter);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  font-size: 0.8em;
+  color: var(--text-darker);
+}
+
+footer > div {
+  display: flex;
+  justify-content: center;
+}
+
+footer > div > a {
+  color: var(--text-darker);
+  text-decoration: none;
+  margin: 0 0.5em;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+
+footer > div > a:hover {
+  color: var(--text-primary);
+}
