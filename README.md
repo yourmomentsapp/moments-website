@@ -11,4 +11,4 @@ www.yourmoments folder).
 
 So, every time that a change that changes the visual appearance of the website is
 made, the `npm run build` command should be run, and the results of the `dist`
-folder should be copied into the `public` folder.
+folder should be copied into the `docs` folder.
