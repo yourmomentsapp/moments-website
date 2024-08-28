@@ -35,13 +35,14 @@ const NearbyMomentView = () => {
     setLoaderTimer(setTimeout(() => {
       setLoaderTimer(null);
     }, ANIMATION_TIME));
+    
     getMomentData();
   }, []);
 
-  // handle error message
-  useEffect(() => {
-    // alert(errorMsg);
-  }, [errorMsg]);
+  // // handle error message
+  // useEffect(() => {
+  //   alert(errorMsg);
+  // }, [errorMsg]);
 
   async function getMomentData() {
     try {
@@ -49,10 +50,10 @@ const NearbyMomentView = () => {
       await statusCheck(res);
       res = await res.json();
 
-      console.log(res);
       setMomentData(res);
     } catch (err) {
       setErrorMsg(err.message);
+      setMomentData(true);
     }
   }
 
@@ -67,7 +68,9 @@ const NearbyMomentView = () => {
 
   const ErrorView = () => {
     return (
-      <h1>Error!</h1>
+      <div id="error">
+        <h1>{errorMsg || "Something happened and we don't know what it was..."}</h1>
+      </div>
     )
   }
 

@@ -33,6 +33,10 @@ const router = createBrowserRouter([
   {
     path: "/moments/id/:momentId",
     element: <MomentByIdView />
+  },
+  {
+    path: "*",
+    element: <LandingPage />
   }
 ]);
 
